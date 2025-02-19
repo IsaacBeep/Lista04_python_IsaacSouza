@@ -5,4 +5,9 @@ for i in sentido:
     if sentido == 'c':
         numero = int(input('Digite um numero acima de 1: '))
         for I in range(numero):
-            print(i)
+            numR = numero - I
+            print(numR)
+    elif sentido == 'a':
+        numero = int(input('Digite um numero abaixo de 20: '))
+        for I in range(numero):
+            print('')
