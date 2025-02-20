@@ -15,10 +15,20 @@ print('Horarios disponiveis: {}'.format(GU_horarios))
 
 S_horarios = input('Agora escolha um horario disponivel: ')
 
-if 1 <= S_horarios <= len(GUA_horarios):
-    hora_sele = GU_horarios[S_horarios - 1]
-    print("Horario de {} foi agendado com sucesso".format(hora_sele))
-    GU_horarios.remove(hora_sele)
+if S_horarios in GU_horarios:
+    i = GU_horarios.index(S_horarios)
+    GU_horarios.remove(S_horarios)
+    print('Agora o horario {} esta ocupado'.format(S_horarios))
+    SE_horarios = input('Deseja agendar mais um horario? s/n: ')
+    
+    if SE_horarios == 's':
+        print('Horarios disponiveis: {}'.format(GU_horarios))
+        S_horarios = input('Agora escolha um horario disponivel: ')
+        if S_horarios in GU_horarios:
+            i = GU_horarios.index(S_horarios)
+            GU_horarios.remove(S_horarios)
+            print('Agora o horario {} esta ocupado'.format(S_horarios))
+            SE_horarios = input('Deseja agendar mais um horario? s/n: ')
 
     
 

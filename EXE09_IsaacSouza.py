@@ -12,6 +12,5 @@ for i in sentido:
         if numero < 20:
             for I in range(20, numero, -1):
                 print(I)
-                print(numero)
-else:
-    print('Direção invalida')
+                print(numero)  
+print('IsaacSouza')

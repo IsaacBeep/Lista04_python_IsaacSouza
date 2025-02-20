@@ -10,9 +10,10 @@ for i in range(tarefas):
     numR = input('A tarefa esta concluida? "sim", "s", "nao, ou "n": ').lower()
 
     if numR == 'sim' or 's':
-        Tconcluida = + numR
+        Tconcluida = +1
 
     if numR == 'nao' or 'n':
-        TNconcluida =  + numR
+        TNconcluida =  +1
     
 print('o total de {} foram concluidas e o total de {} nao foram concluidas'.format(Tconcluida, TNconcluida))
+print('IsaacSouza')
