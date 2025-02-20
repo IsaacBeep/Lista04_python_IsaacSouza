@@ -9,5 +9,9 @@ for i in sentido:
             print(numR)
     elif sentido == 'a':
         numero = int(input('Digite um numero abaixo de 20: '))
-        for I in range(numero):
-            print('')
+        if numero < 20:
+            for I in range(20, numero, -1):
+                print(I)
+                print(numero)
+else:
+    print('Direção invalida')
